@@ -1,0 +1,2 @@
+require("vijai")
+print("hi")
