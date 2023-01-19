@@ -20,7 +20,6 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
 	-- Packer can manage itself
 	use 'wbthomason/packer.nvim'
-	use { "williamboman/mason-lspconfig.nvim"}
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.1',
 		-- or                            , branch = '0.1.x',
