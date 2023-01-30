@@ -6,7 +6,6 @@ sudo -n true
 test $? -eq 0 || exit 1 "you should have sudo privilege to run this script"
 
 apt-get update
-apt install ubuntu-mate-desktop -y
 apt install curl -y
 apt install git -y 
 apt install nodejs -y
