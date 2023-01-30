@@ -17,4 +17,11 @@ apt install firefox -y
 curl https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/UbuntuMono.zip
 unzip UbuntuMono.zip -d ~/.fonts
 fc-cache -fv
+
+git clone https://github.com/neovim/neovim
+cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
+
+
+
 echo "done!"
