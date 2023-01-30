@@ -12,4 +12,4 @@ apt install nodejs -y
 apt install npm -y
 apt install ripgrep -y
 apt install build-essential -y
-
+apt install firefox -y
