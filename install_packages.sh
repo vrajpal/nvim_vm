@@ -13,3 +13,8 @@ apt install npm -y
 apt install ripgrep -y
 apt install build-essential -y
 apt install firefox -y
+
+curl https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/UbuntuMono.zip
+unzip UbuntuMono.zip -d ~/.fonts
+fc-cache -fv
+echo "done!"
