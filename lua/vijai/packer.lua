@@ -111,7 +111,9 @@ return require('packer').startup(function(use)
 	}
 
 	-- Theme
-	use 'navarasu/onedark.nvim'
+  -- use 'navarasu/onedark.nvim'
+  use 'folke/tokyonight.nvim'
+  vim.cmd[[colorscheme tokyonight-day]]
 
   use { 'alexghergh/nvim-tmux-navigation', config = function()
 
