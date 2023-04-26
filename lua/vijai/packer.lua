@@ -58,6 +58,11 @@ return require('packer').startup(function(use)
 			{'rafamadriz/friendly-snippets'},
 		}
 	}
+
+  use {
+    "windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+  }
 	-- Lua
 	use {
 		"folke/which-key.nvim",
@@ -110,10 +115,12 @@ return require('packer').startup(function(use)
 		end
 	}
 
-	-- Theme
+  -- Theme
   -- use 'navarasu/onedark.nvim'
-  use 'folke/tokyonight.nvim'
-  vim.cmd[[colorscheme tokyonight-day]]
+  --   use 'folke/tokyonight.nvim'
+  --vim.cmd[[colorscheme tokyonight-day]]
+
+  use ({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
 
   use { 'alexghergh/nvim-tmux-navigation', config = function()
 
