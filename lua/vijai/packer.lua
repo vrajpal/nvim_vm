@@ -115,12 +115,25 @@ return require('packer').startup(function(use)
 		end
 	}
 
+  use {
+    'pwntester/octo.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim',
+      'nvim-telescope/telescope.nvim',
+      'kyazdani42/nvim-web-devicons',
+    },
+    config = function ()
+      require"octo".setup()
+    end
+  }
+
   -- Theme
   -- use 'navarasu/onedark.nvim'
   --   use 'folke/tokyonight.nvim'
   --vim.cmd[[colorscheme tokyonight-day]]
 
-  use ({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
+--   use ({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   use { 'alexghergh/nvim-tmux-navigation', config = function()
 
