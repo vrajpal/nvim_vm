@@ -126,6 +126,7 @@ return require('packer').startup(function(use)
       require"octo".setup()
     end
   }
+  use 'mfussenegger/nvim-jdtls'
 
   -- Theme
   -- use 'navarasu/onedark.nvim'
