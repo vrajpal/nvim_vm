@@ -85,6 +85,12 @@ return require('packer').startup(function(use)
 		},
 		tag = 'nightly' -- optional, updated every week. (see issue #1193)
 	}
+  use {
+    'folke/trouble.nvim',
+    requires = {
+      'nvim-tree/nvim-web-devicons'
+    }
+  }
 	use { "akinsho/bufferline.nvim" }
 	use {
 		'nvim-lualine/lualine.nvim',
